@@ -12,8 +12,8 @@ int main() {
 	// substract 1 to the size of text array.
 	int nChars = sizeof(text) - 1;
 
-	char *pStart = text; // Pointer that looks the first element of text array.
-	char *pEnd = text + nChars - 1; // Pointer that looks the last element of text array. It is important to note
+	char* pStart = text; // Pointer that looks the first element of text array.
+	char* pEnd = text + nChars - 1; // Pointer that looks the last element of text array. It is important to note
 	// that the pointer of text would have a value of 1. For that reason text (1) + nChars(5) would be = 6.
 	// For that reason, it is necessary to substract 1 to *pEnd to point to the last element of text array.
 
