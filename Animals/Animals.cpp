@@ -10,9 +10,23 @@ public:
 	//Creating a constructor for the Animal class:
 	Animal() { cout << "Animal created." << endl; };
 	//Creating the copy constructor for the Animal class. It is necessary to define the fields of the class:
-	Animal(const Animal& other) : name(other.name) { cout << "Animal created by copying," << endl; };
-	void setName(string name) { this->name = name; };
-	void speak() const { cout << "My name is: " << name << endl; }
+	Animal(const Animal& other) : 
+		name(other.name) { 
+		cout << "Animal created by copying," << endl; 
+	};
+
+	// Adding the destructor 
+	~Animal() {
+		cout << "Destructor called" << endl;
+	}
+
+	void setName(string name) { 
+		this->name = name; 
+	};
+	
+	void speak() const { 
+		cout << "My name is: " << name << endl; 
+	}
 };
 
 int main() {
