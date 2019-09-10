@@ -48,5 +48,9 @@ int main() {
 	Animal animal3(animal1);
 	animal3.speak();
 
+	Animal* pCat1 = new Animal();
+	pCat1->setName("Kitty");
+	pCat1->speak();
+
 	return 0;
 }
